@@ -5,11 +5,11 @@ a linked list implementation of a STACK
 
 Written by: ANKIT @nkitan
 
-DISCLAIMER: This is a project i made up for fun, i know it has bugs.
+DISCLAIMER: This is for learing purposes , i know it has bugs. help me out with them?
 
 ------------------------------------------------------------------------
 
-This is a rather crude and simple implementation of a Stack data structure in c++ lanugage.
+This is a rather crude and simple implementation of a Stack data structure in C++ lanugage.
 It has some bugs but they're being worked upon. your suggestions would be really helpful. 
 I need your help to fix it! 
 
@@ -31,10 +31,10 @@ I recommend DEV C++ or Code::Blocks.
 
 FEATURES
 ---------
-* Pushing,poping and display using functions (Modular)
+* Pushing , poping and display using functions ( Modular )
 * Menu driven
 * Dynamically allocated memory
-* (virutally) infinite storage, no limits to amount of data
-* data structure can be changed very easily
-* Deletion of buffe/memory using destructor
+* ( Virutally ) Infinite storage , no limits to amount of data
+* Data structure can be changed very easily
+* Deletion of buffer / memory using destructor
 * Quick runtime
