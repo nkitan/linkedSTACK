@@ -99,7 +99,9 @@ int main()                             //MAIN FUNCTION
 	 std::cout<<"2.POP\n";       
 	 std::cout<<"3.DISPLAY\n";
 	 std::cout<<"4.EXIT\n"; 
-     std::cout<<"ENTER YOUR CHOICE:\n";
+//         char cred[7];
+//	 cred={"N","K","I","T","A","N"};
+	std::cout<<"ENTER YOUR CHOICE:\n";
      std::cin>>choice;
 
 	  if(choice==1)
