@@ -27,3 +27,14 @@ I recommend DEV C++ or Code::Blocks.
 
 
  NOTE: Make sure you have GCC installed on your Environment.
+
+
+FEATURES
+---------
+* Pushing,poping and display using functions (Modular)
+* Menu driven
+* Dynamically allocated memory
+* (virutally) infinite storage, no limits to amount of data
+* data structure can be changed very easily
+* Deletion of buffe/memory using destructor
+* Quick runtime
