@@ -16,10 +16,12 @@ I need your help to fix it!
 TESTED ON DEV C++ running TDM GCC 4.9.2 using MinGW.
 ------------------------------------------------------------------------
 -WINDOWS-
- Compile and run using your favourite compiler/IDE.
- I recommend DEV C++ or Code::Blocks.
 -------------------------------------------------------------------------
+Compile and run using your favourite compiler/IDE.
+I recommend DEV C++ or Code::Blocks.
+
 -LINUX-
+-------------------------------------------------------------------------
  In the directory of the cpp file, use command 
  > $ gcc linkedSTACK.cpp -o linkedSTACK 
 
