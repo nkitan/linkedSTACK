@@ -21,7 +21,7 @@ TESTED ON DEV C++ running TDM GCC 4.9.2 using MinGW.
 
 -LINUX-
  use command 
- $ gcc linkedSTACK.cpp -o linkedSTACK
+ > $ gcc linkedSTACK.cpp -o linkedSTACK <
  in the directory of the cpp file.
 
  NOTE:make sure you have GCC installed by installing Build-Essentials.
