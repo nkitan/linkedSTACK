@@ -15,15 +15,14 @@ I need your help to fix it!
 
 TESTED ON DEV C++ running TDM GCC 4.9.2 using MinGW.
 
-#Windows
+-WINDOWS-
+ compile and run using your favourite compiler/IDE.
+ I recommend DEV C++ or Code::Blocks.
 
-COMPILE AND RUN USING YOUR FAVOURITE IDE.
-I recommend DEV C++ or Code::Blocks
+-LINUX-
+ use command 
+ $ gcc linkedSTACK.cpp -o linkedSTACK
+ in the directory of the cpp file.
 
-#Linux
-USE COMMAND 
-
-$ gcc linkedSTACK.cpp -o linkedSTACK
-
-make sure you have GCC installed by installing Build-Essentials.
+ NOTE:make sure you have GCC installed by installing Build-Essentials.
 
