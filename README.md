@@ -20,9 +20,8 @@ TESTED ON DEV C++ running TDM GCC 4.9.2 using MinGW.
  I recommend DEV C++ or Code::Blocks.
 
 -LINUX-
- use command 
- > $ gcc linkedSTACK.cpp -o linkedSTACK <
- in the directory of the cpp file.
+ In the directory of the cpp file, use command 
+ > $ gcc linkedSTACK.cpp -o linkedSTACK 
 
- NOTE:make sure you have GCC installed by installing Build-Essentials.
 
+ NOTE: Make sure you have GCC installed on your Environment.
