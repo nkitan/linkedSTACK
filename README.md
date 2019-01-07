@@ -38,3 +38,4 @@ FEATURES
 * Data structure can be changed very easily
 * Deletion of buffer / memory using destructor
 * Quick runtime
+* Auto Deletion of allocated Memory upon exit
