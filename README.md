@@ -13,8 +13,6 @@ This is a rather crude and simple implementation of a Stack data structure in C+
 It has some bugs but they're being worked upon. your suggestions would be really helpful. 
 I need your help to fix it! 
 
-TESTED ON DEV C++ running TDM GCC 4.9.2 using MinGW.
-------------------------------------------------------------------------
 -WINDOWS-
 -------------------------------------------------------------------------
 Compile and run using your favourite compiler/IDE.
