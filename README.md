@@ -18,7 +18,7 @@ recommended: DEV C++ or Code::Blocks
 FEATURES
 ---------
 * Pushing , poping and display using functions ( Modular )
-* Menu driven
+* Menu driven (CLI)
 * Dynamically allocated memory
 * ( Virutally ) Infinite storage , no limits to amount of data
 * Data structure can be changed very easily
