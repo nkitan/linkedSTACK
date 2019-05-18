@@ -8,12 +8,12 @@ I need your help to fix it!
 
 FOR WINDOWS
 -----------
-RUN THE linkedSTACK.exe
+run the included linkedSTACK.exe executable
 
 OR
 
 Compile and run using your favourite compiler/IDE.
-I recommend DEV C++ or Code::Blocks.
+recommended: DEV C++ or Code::Blocks
 
 FEATURES
 ---------
