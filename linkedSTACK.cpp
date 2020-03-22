@@ -116,8 +116,6 @@ int main()
        delete pt;
       }
      clrs();
- 	   std::cout<<"\n[+] EXITING , ENTER AN ALPHABET THEN PRESS ENTER";
-     gtch();
      goto end;
     } 
    goto start;
