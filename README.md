@@ -8,12 +8,12 @@ I need your help to fix it!
 
 FOR LINUX
 ---------
-run the included linkedSTACK ELF Binary using ./linkedSTACK 
+run the included linkedSTACK ELF Binary using ./linkedSTACK                                                                 
 (you might have to set its permissions to executable using chmod +x linkedSTACK)
 
 OR
 
-compile the included cpp file using g++ linkedSTACK.cpp -o linkedSTACK
+compile the included cpp file using g++ linkedSTACK.cpp -o linkedSTACK                                                  
 then, run the binary file using ./linkedSTACK
 
 
