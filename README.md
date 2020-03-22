@@ -6,6 +6,17 @@ This is a rather crude and simple implementation of a Stack data structure in C+
 It has some bugs but they're being worked upon. your suggestions would be really helpful. 
 I need your help to fix it! 
 
+FOR LINUX
+---------
+run the included linkedSTACK ELF Binary using ./linkedSTACK 
+(you might have to set its permissions to executable using chmod +x linkedSTACK)
+
+OR
+
+compile the included cpp file using g++ linkedSTACK.cpp -o linkedSTACK
+then, run the binary file using ./linkedSTACK
+
+
 FOR WINDOWS
 -----------
 run the included linkedSTACK.exe executable
