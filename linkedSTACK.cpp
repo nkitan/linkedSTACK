@@ -1,69 +1,61 @@
 #include"conio.h"
 
-
 struct Node 
-{
-	 int info;
-	 Node *next;
+{ int info;
+  Node *next;
 } *top,*ptr;
 
 struct Stack {
-
-Node * CreateNode(int val)
+Node * CreateNode(int val) 
 {
-ptr= new Node;
-ptr ->info = val;
-ptr ->next = NULL;
-return ptr;
+ ptr= new Node;
+ ptr ->info = val;
+ ptr ->next = NULL;
+ return ptr;
 }
 
 void Push(Node *fresh)
 {
-	Node *save;
-	if(top==NULL)
-	 top = fresh;
+ Node *save;
+ if(top==NULL)
+  top = fresh;
 
-	else
-	{
-	 save=top;
-     fresh->next=save;
-     top=fresh;  
-    } 
+else
+ {
+  save=top;
+  fresh->next=save;
+  top=fresh;  
+ } 
 }
 
 void Pop()
 {
-	if(top==NULL)
-	 {
-	  clrs();
-      std::cout<<"UNDERFLOW!\n";
-	 }
-
-    else
-    {
-     ptr=top;
-     top=top->next;
-     delete ptr;
-    }
+ if(top==NULL)
+ {
+  clrs();
+  std::cout<<"UNDERFLOW!\n";
+ }
+ else
+ { ptr=top;
+   top=top->next;
+   delete ptr;
+ }
 }
 
 void Display(Node *dispnode)
 {
-	 while(dispnode!=NULL)
-	 { 
-      std::cout<<dispnode->info<<" > ";
-      dispnode=dispnode->next;
-     }
-     gtch();
+ while(dispnode!=NULL)
+  { 
+   std::cout<<dispnode->info<<" > ";
+   dispnode=dispnode->next;
+  }
+ gtch();
 }
-
-
-}stack;
+};
 
 
 int main()
-{
-
+{	
  int choice,value;
  char exiit;
  Node *mainpointer;
@@ -75,9 +67,8 @@ int main()
  std::cout<<"3.DISPLAY\n";
  std::cout<<"4.EXIT\n";
  std::cout<<"ENTER CHOICE:\n";
-
+ Stack stack;
  std::cin>>choice;
- 
  if(choice==1)
  {
   clrs();
@@ -95,13 +86,13 @@ int main()
  
  else if(choice==2)
  {   
- 	char temp;
- 	 std::cout<<"[-] ARE YOU SURE?";
- 	 std::cin>>temp;
- 	 if(temp=='y' || temp=='Y')
- 	 	stack.Pop();
- 	 clrs();
-     goto start; 
+  char temp;
+  std::cout<<"[-] ARE YOU SURE?";
+  std::cin>>temp;
+  if(temp=='y' || temp=='Y')
+   stack.Pop();
+ clrs();
+  goto start; 
  }
  
  else if(choice==3)
@@ -132,8 +123,8 @@ int main()
    goto start;
  }
 
- else
-  { 
+else
+  {
    std::cout<<"[ERROR - 2] INVALID CHOICE";
    gtch();
    clrs();
@@ -143,6 +134,3 @@ int main()
  end:
  return 0;
 }
-
-
-
