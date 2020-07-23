@@ -1,4 +1,4 @@
-#include"conio.h"
+#include "conio.h"
 
 struct Node 
 { int info;
@@ -6,129 +6,124 @@ struct Node
 } *top,*ptr;
 
 struct Stack {
-Node * CreateNode(int val) 
-{
+Node * CreateNode(int val){
  ptr= new Node;
  ptr ->info = val;
  ptr ->next = NULL;
  return ptr;
 }
 
-void Push(Node *fresh)
-{
+void Push(Node *fresh){
  Node *save;
- if(top==NULL)
-  top = fresh;
 
-else
- {
+ if(top==NULL){
+  top = fresh;
+ }
+ 
+ else {
   save=top;
   fresh->next=save;
   top=fresh;  
  } 
 }
 
-void Pop()
-{
- if(top==NULL)
- {
+int Pop(){
+ if(top==NULL){
   clrs();
-  std::cout<<"UNDERFLOW!\n";
- }
- else
- { ptr=top;
+  std::cout<<"[ERROR] CANNOT DELETE EMPTY LIST\n";
+  return 0;
+  }
+  
+  else{ 
+   ptr=top;
+   int save = ptr->info;
    top=top->next;
    delete ptr;
+   return save;
  }
 }
 
-void Display(Node *dispnode)
-{
- while(dispnode!=NULL)
-  { 
-   std::cout<<dispnode->info<<" > ";
-   dispnode=dispnode->next;
+void Display(Node *node){
+ while(node!=NULL){ 
+   std::cout<<node->info<<" > ";
+   node=node->next;
   }
- gtch();
 }
+
+void collectGarbage(){
+    while(top!=NULL){ 
+      Node *pt;
+      pt=top;
+      top=top->next;
+      delete pt;
+      }
+ }
+  
 };
 
 
 int main()
 {	
  int choice,value;
- char exiit;
- Node *mainpointer;
+ char temp;
+ bool exit = false;
 
- start:
- clrs();
- std::cout<<"1.PUSH\n";
+ Node *node;
+
+while(!exit){
+ std::cout<<"\n1.PUSH\n";
  std::cout<<"2.POP\n";
  std::cout<<"3.DISPLAY\n";
  std::cout<<"4.EXIT\n";
  std::cout<<"ENTER CHOICE:\n";
+
  Stack stack;
  std::cin>>choice;
- if(choice==1)
+ 
+ switch (choice)
  {
-  clrs();
-  std::cout<<"[-] ENTER INFORMATION:";
-  std::cin>>value;
-  mainpointer=stack.CreateNode(value);
+ case 1:  
+    clrs();
+    std::cout<<"[-] ENTER INFORMATION:\n";
+    std::cin>>value;
+    
+    node=stack.CreateNode(value);
+    
+     if(node==NULL){
+  	  std::cout<<"[ERROR] CANNOT CREATE NODE!\n";
+  	  std::cout<<"[+] Aborting!\n";
+     }
 
-  if(mainpointer==NULL)
-  {
-  	 std::cout<<"[ERROR] CANNOT CREATE NODE!";
-  	 std::cout<<"\n[+] Aborting!";
-  }
-  stack.Push(mainpointer);
- }
- 
- else if(choice==2)
- {   
-  char temp;
-  std::cout<<"[-] ARE YOU SURE?";
-  std::cin>>temp;
-  if(temp=='y' || temp=='Y')
-   stack.Pop();
- clrs();
-  goto start; 
- }
- 
- else if(choice==3)
- {
+     else{ 
+     stack.Push(node);
+     }
+    break;
+
+ case 2:
+  clrs();
+  std::cout<<"POPPED- "<<stack.Pop();   
+  break;
+
+ case 3:
   clrs();
   std::cout<<"\nSTACK: ";
   stack.Display(top);
- }
+  break;
  
- else if(choice==4)
- {   
-   std::cout<<"[-] EXIT? (Y/N)";
-   std::cin>>exiit;
-   if(exiit=='y' || exiit=='Y')
-    {
-     while(top!=NULL)
-      { 
-       Node *pt;
-       pt=top;
-       top=top->next;
-       delete pt;
-      }
+ case 4:
+    std::cout<<"[-] EXIT? (Y/N)";
+    std::cin>>temp;
+    if(temp=='y' || temp=='Y')
+      exit = true;
+    break;
+ 
+ default:
+     std::cout<<"[ERROR - 2] INVALID CHOICE";
+     gtch();
      clrs();
-     goto end;
-    } 
-   goto start;
- }
-
-else
-  {
-   std::cout<<"[ERROR - 2] INVALID CHOICE";
-   gtch();
-   clrs();
-   goto start;
+     break;
   }
- goto start;
- end:
+}
+ clrs();
  return 0;
 }
